@@ -1,6 +1,8 @@
 ## The functions calculate the inverse of a matrix
 
-## makeCacheMatrix takes a square matrix as an input and creates a list with 4 different functions: first element) changes the matrix in the function environment, second element) sets the inverse of the matrix, third element) gets the matrix, fourth element) gets the inverse of the matrix 
+## makeCacheMatrix takes a square matrix as an input and creates a list with 4 different functions: 
+## first element) changes the matrix in the function environment, second element) sets the inverse of 
+## the matrix, third element) gets the matrix, fourth element) gets the inverse of the matrix 
 
 makeCacheMatrix <- function(x = matrix()) {
       
@@ -30,7 +32,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## cacheSolve gets the inverse of the matrix if it's already specified in makeCacheMatrix. If the inverse is not already specified, the function calculates the ivnerse and stores it in the environment of makeCacheMatrix
+## cacheSolve gets the inverse of the matrix if it's already specified in makeCacheMatrix. 
+## If the inverse is not already specified, the function calculates the ivnerse and stores 
+## it in the environment of makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
       inverse <- x$getinverse()
